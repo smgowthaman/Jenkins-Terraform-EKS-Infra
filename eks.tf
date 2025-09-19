@@ -1,4 +1,5 @@
 # https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/19.15.1
+# https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/19.15.1#module_eks_managed_node_group
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.15.1"
