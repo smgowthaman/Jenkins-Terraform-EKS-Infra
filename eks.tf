@@ -1,3 +1,4 @@
+# https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/19.15.1
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.15.1"
@@ -30,7 +31,7 @@ module "eks" {
   }
 
   eks_managed_node_groups = {
-    vgs_worker_node = {
+    smg_worker_node = {
       min_size     = 1
       max_size     = 2
       desired_size = 1
